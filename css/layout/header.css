@@ -43,7 +43,7 @@
 
   /* MOBILE MENU */
 
-  .mobile-menu {
+  .img-btn-mobile {
     position: fixed;
     top: 0;
     left: 0;
@@ -113,6 +113,7 @@
 .link-mobile-menu:hover {
   color: #404bbf;
 } 
+
 
 /* ADDRESS MOBILE MENU */
 
@@ -310,7 +311,7 @@ letter-spacing: 0.4px;
 .new-link {
   padding top: 24px;
   padding bottom: 24px;
-  display: block;
+  display: block;   
 }
 
 .acsent-logo-top {
@@ -362,12 +363,6 @@ color: #404bbf;
   display: block;
 }
 
-.contacts-top {
-  display: flex;
-  gap: 40px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
   .link-nav-link:hover {
       color: #404bbf;
   }
@@ -407,10 +402,7 @@ align-items: center;
 
     .contacts {
         font-style: normal;
-    }
-    .contacts-top {
-        display: flex;
-        gap: 40px;
+        font-size: 16px;
     }
     .contacts .link:hover {
         color: #404bbf;
@@ -419,5 +411,10 @@ align-items: center;
     color: #404bbf;
     }
     
+    .contacts-top {
+      display: flex;
+      gap: 40px;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
