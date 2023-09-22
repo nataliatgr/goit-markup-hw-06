@@ -197,10 +197,11 @@
         color: #f4f4fd;
         }
   
-    .footer-social {
-      display: inline;
-      margin: 0;
-    }
+        .footer-social {
+          display: inline;
+          margin: 0;
+          margin-bottom: 24px;
+        }
     .footer-social-text {
       text-align: start;
     }

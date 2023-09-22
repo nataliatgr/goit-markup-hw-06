@@ -53,6 +53,7 @@
     visibility: hidden;
     pointer-events: none;
   }
+
   .mobile-menu-container {
     display: flex;
     flex-direction: column;
@@ -66,8 +67,8 @@
     min-height: 752px;
   }
   
-  .mobile-menu {
-    padding: 24px;
+  .mobile-menu-footer {
+    padding: 12px;
   }
   .btn-mobile-close {
   position: absolute;
@@ -187,7 +188,7 @@ letter-spacing: 0.4px;
 /* TABLE HEADER */
 
 @media screen and (min-width: 768px) {
-.mobile-menu,
+.mobile-menu-footer,
 .btn-mobile-menu {
   display: none;
 }
