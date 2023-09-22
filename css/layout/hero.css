@@ -181,7 +181,7 @@
       align-items: center;
     }
     
-    .checkbox-input:checked + .checkbox-form-label > .checkbox-form-own {
+    .checkbox-input:checked + .checkbox-policy > .checkbox-icon {
       background-color: #404bbf;
       border: none;
       fill: #F4F4FD;
