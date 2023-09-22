@@ -12,6 +12,7 @@
       visibility: hidden;
       pointer-events: none;
     } 
+ 
     
     .is-open{
       opacity: 1;
@@ -150,14 +151,17 @@
       margin-bottom: 24px;
     }
     .checkbox-policy {
-      display: flex;
       align-items: center;      
       font-size: 12px;
       line-height: 1.17;
       letter-spacing: 0.04em;
       color: #8e8f99;
     }
-    
+
+ .checkbox-policy {
+  align-items: center;
+ }
+
     .checkbox-icon {
       width: 16px;
       height: 16px;
