@@ -1,0 +1,571 @@
+@media screen and (max-width: 767px) {
+    .backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(46, 47, 66, 0.4);
+      transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    
+    
+    .is-open{
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .form-container {
+      padding: 72px 0 24px;
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      transform: translate(0) scale(1);
+      width: 288px;
+      min-height: 623px;
+      background: #fcfcfc;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .order-button-footer {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e7e9fc;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .order-button-footer:hover,
+    .order-button-footer:focus {
+      background-color: #404bbf;
+      border: none;
+      fill: #ffffff;
+    }
+    
+    .close-icon {
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .form-title {
+      max-width: 256px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
+      margin-bottom: 16px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .footer-form {
+      max-width: 256px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .input-cont {
+      margin-bottom: 8px;
+    }
+    
+    .label-form-name {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+      color: #8e8f99;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .input-name {
+      position: relative;
+    }
+    
+    .input-area {
+      width: 100%;
+      height: 40px;
+      border: 1px solid rgba(46, 47, 66, 0.4);
+      border-radius: 4px;
+      background-color: transparent;
+      padding-left: 38px;
+      outline: transparent;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .input-area:focus {
+      border-color: #4d5ae5;
+    }
+    .input-area:focus + .img-form-backdrop {
+      fill: #4d5ae5;
+    }
+    
+    .svg-form {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .svg-form:focus {
+      fill: #4d5ae5;
+    }
+    
+    .form-box {
+      margin-bottom: 16px;
+    }
+    
+    .textarea-input {
+      width: 100%;
+      height: 120px;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+      color: rgba(46, 47, 66, 0.4);
+      border: 1px solid rgba(46, 47, 66, 0.4);
+      border-radius: 4px;
+      background-color: transparent;
+      padding: 8px 16px;
+      outline: transparent;
+      resize: none;
+      transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .textarea-input:focus {
+      border-color: #4d5ae5;
+    }
+    
+    .callback-checkbox {
+      margin-bottom: 24px;
+    }
+    .checkbox-policy {
+      display: flex;
+      align-items: center;      
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+      color: #8e8f99;
+    }
+    
+    .checkbox-icon {
+      width: 16px;
+      height: 16px;
+      border: 1px solid rgba(46, 47, 66, 0.4);
+      border-radius: 2px;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      fill: transparent;
+      margin-right: 8px;
+      cursor: pointer;
+      display: inline-block;
+      align-items: center;
+    }
+    
+    .checkbox-input:checked + .checkbox-form-label > .checkbox-form-own {
+      background-color: #404bbf;
+      border: none;
+      fill: #F4F4FD;
+    }
+    
+    .policy-link {
+      color: #4d5ae5;
+      text-decoration: underline;
+    }
+    
+    .form-button {
+      margin: 0 auto;
+      display: block;
+      min-width: 169px;
+      height: 56px;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 4px;
+      border: none;
+      background-color: #4d5ae5;
+    }
+    
+  }
+  
+  
+  
+  .hero {
+    background: #2e2f42;
+    max-width: 767px;  
+    margin: 0 auto;
+    padding: 72px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/background/mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  @media screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+      .hero {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+            ),
+        url("../../images/background/mobile@2x.jpg");
+      }
+  }
+    
+  .hero-header {
+    width: 220px;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order-button {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.64px;
+    background: #4d5ae5;
+    margin-top: 64px;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    .order-button:hover {
+      background-color: #404bbf;
+    }
+  
+    .order-button:focus {
+      background-color: #404bbf;
+    }
+  }
+  
+  
+  /* TABLET */
+  
+  @media screen and (min-width: 768px) {
+    
+    .hero {
+      background: #2e2f42;
+      max-width: 1157px;      
+      margin: 0 auto;
+      padding: 112px 0;
+      background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/background/office-people-bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+          ),
+      url("../../images/background/office-people-bg@2x.jpg");
+    }
+  }
+    
+    .hero-header {
+      font-size: 56px;
+      line-height: 1.07; /* 107.143% */
+      letter-spacing: 1.12px;
+      width: 496px;
+      padding: 0;
+    }
+    
+  /* BACKDROP */
+  
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  
+  .is-open{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .form-container {
+    padding: 72px 24px 24px 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 408px;
+    min-height: 584px;
+    background: #fcfcfc;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .order-button-footer {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .order-button-footer:hover,
+  .order-button-footer:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+  }
+  
+  .close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 16px;
+  }
+  
+  .input-cont {
+    margin-bottom: 8px;
+  }
+  
+  .label-form-name {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .input-name {
+    position: relative;
+  }
+  
+  .input-area {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .input-area:focus {
+    border-color: #4d5ae5;
+  }
+  .input-area:focus + .img-form-backdrop {
+    fill: #4d5ae5;
+  }
+  
+  .svg-form {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .svg-form:focus {
+    fill: #4d5ae5;
+  }
+  
+  .form-box {
+    margin-bottom: 16px;
+  }
+  
+  .textarea-input {
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .textarea-input:focus {
+    border-color: #4d5ae5;
+  }
+  
+  .callback-checkbox {
+    margin-bottom: 24px;
+  }
+  .checkbox-policy {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+  }
+  
+  .checkbox-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  
+  .checkbox-input:checked + .checkbox-form-label > .checkbox-form-own {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+  }
+  
+  .policy-link {
+    color: #4d5ae5;
+    text-decoration: underline;
+  }
+  
+  .form-button {
+    margin: 0 auto;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 4px;
+    border: none;
+    background-color: #4d5ae5;
+  }
+  
+  }
+  
+  /* DESKTOP */
+  
+  @media screen and (min-width: 1158px) {
+    .hero {
+      background: #2e2f42;
+      max-width: 1440px;      
+      margin: 0 auto;
+      padding: 188px 0;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(./../../images/background/office-people.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 1158px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .hero {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+      url("./../../images/background/office-people@2x.jpg");
+    }
+    }
+  
+    .hero-header {
+      color: #fff;
+      font-size: 56px;
+      font-style: normal;
+      line-height: 1.07; /* 107.143% */
+      letter-spacing: 1.12px;
+      max-width: 496px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+  
+  }
+  
