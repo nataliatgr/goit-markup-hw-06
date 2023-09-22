@@ -1,9 +1,8 @@
 @media screen and (max-width: 767px) {
   .btn-mobile-menu {
     background-color: #fff;
-    border: none;
+    border: none;  
   }
-
 
   .contact-nav {
     display: none;
