@@ -4,6 +4,18 @@
     border: none;  
   }
 
+.is-open
+.mobile-menu-footer {
+ opacity: 0;
+ visibility: hidden;
+ pointer-events: none;
+}
+.mobile-menu-footer.is-open {
+ opacity: 1;
+ visibility: visible;
+ pointer-events: auto;
+}
+
   .contact-nav {
     display: none;
   }
@@ -40,19 +52,8 @@
     color: #f4f4fd;
     }
 
-  /* MOBILE MENU */
 
-  .img-btn-mobile {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
+  /* MOBILE MENU */
 
   .mobile-menu-container {
     display: flex;
@@ -65,10 +66,17 @@
     margin-left: auto;
     margin-right: auto;
     min-height: 752px;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #fff;   
   }
+
   
   .mobile-menu-footer {
-    padding: 12px;
+    padding: 12px;    
   }
   .btn-mobile-close {
   position: absolute;
