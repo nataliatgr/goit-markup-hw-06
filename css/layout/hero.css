@@ -158,10 +158,6 @@
       color: #8e8f99;
     }
 
- .checkbox-policy {
-  align-items: center;
- }
-
     .checkbox-icon {
       width: 16px;
       height: 16px;
@@ -189,8 +185,14 @@
     
     .policy-link {
       color: #4d5ae5;
-      text-decoration-line: underline;      
+      text-decoration-line: underline; 
+      flex-shrink: 0;     
     }
+
+    .checkbox-policy {
+      align-items: center;
+      display: flex; 
+     }
     
     .form-button {
       margin: 0 auto;
